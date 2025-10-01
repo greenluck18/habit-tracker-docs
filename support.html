@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HabitTracker — Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support page for HabitTracker — a simple and elegant iOS app to track and build positive habits." />
+  <meta name="theme-color" content="#0a7c49" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="HabitTracker — Support" />
+  <meta property="og:description" content="Get help, FAQs, and contact support for HabitTracker on iOS." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN/support.html" />
+  <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HabitTracker — Support" />
+  <meta name="twitter:description" content="Get help, FAQs, and contact support for HabitTracker on iOS." />
+  <meta name="twitter:image" content="https://YOUR-DOMAIN/og-image.png" />
+
+  <!--
+    👉 Replace the placeholders:
+      - https://YOUR-DOMAIN with your real domain or GitHub Pages site
+      - support@yourdomain.com with your support inbox
+      - privacy.html / terms.html if you host those elsewhere
+      - App Store link in the "Download" button and "App Info" section
+  -->
+
+  <style>
+    :root{
+      --bg:#0b0f12;
+      --card:#12181d;
+      --muted:#9fb3c8;
+      --text:#e6eef6;
+      --brand:#18a05f;
+      --brand-600:#128752;
+      --outline:#26323c;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:focus-visible,button:focus-visible,.skip-link:focus{outline:3px solid #79ffe1;outline-offset:2px;border-radius:.25rem}
+    .container{max-width:980px;margin-inline:auto;padding:24px}
+    header{padding:28px 0 8px;border-bottom:1px solid var(--outline);margin-bottom:24px}
+    header h1{font-size:clamp(28px,5vw,40px);margin:0 0 6px;font-weight:800;letter-spacing:.2px}
+    header p{margin:0;color:var(--muted)}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--outline);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .grid{display:grid;gap:18px}
+    @media (min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+    section{background:var(--card);border:1px solid var(--outline);border-radius:16px;padding:20px}
+    section h2{margin:0 0 12px;font-size:20px}
+    ul,ol{margin:0 0 0 18px}
+    .callout{border:1px solid var(--brand);background:rgba(24,160,95,.08);padding:14px;border-radius:12px}
+    .cta{display:inline-block;background:var(--brand);color:#00150b;font-weight:700;padding:10px 14px;border-radius:10px;border:1px solid var(--brand-600)}
+    footer{color:var(--muted);padding:28px 0;margin-top:24px;border-top:1px solid var(--outline)}
+    .kvt{display:grid;grid-template-columns:1fr auto;gap:8px}
+    .small{font-size:13px;color:var(--muted)}
+    .list-tight li{margin:6px 0}
+    .skip-link{position:absolute;left:-9999px;top:-9999px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    code{background:#0e141a;border:1px solid var(--outline);padding:.1rem .35rem;border-radius:6px}
+    .two-col{columns:1}
+    @media (min-width:780px){.two-col{columns:2;column-gap:22px}}
+    details{border:1px solid var(--outline);border-radius:12px;padding:12px;background:#0e1417}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:600}
+  </style>
+
+  <!-- FAQ rich results -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How do I add a habit?",
+       "acceptedAnswer":{"@type":"Answer","text":"Tap the + button, enter a name (up to 30 characters), then tap Add."}},
+      {"@type":"Question","name":"How do I mark a habit as complete?",
+       "acceptedAnswer":{"@type":"Answer","text":"In the main list, tap the checkbox next to a habit. Completed habits turn green with a checkmark."}},
+      {"@type":"Question","name":"Where is my data stored?",
+       "acceptedAnswer":{"@type":"Answer","text":"All data is stored locally on your device using UserDefaults. The app does not transmit your data off the device."}},
+      {"@type":"Question","name":"How do I see my past progress?",
+       "acceptedAnswer":{"@type":"Answer","text":"Open Progress View to see a 12-month grid with color-coded completion levels."}},
+      {"@type":"Question","name":"How do I contact support?",
+       "acceptedAnswer":{"@type":"Answer","text":"Email us at support@yourdomain.com and include your iOS version and app version."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="container" id="content">
+    <header>
+      <h1>HabitTracker — Support</h1>
+      <p>Help, FAQs, troubleshooting, and contact information.</p>
+      <div class="badges" aria-label="App information">
+        <span class="badge" title="Supported iOS">iOS 18.4+</span>
+        <span class="badge" title="Swift version">Swift 5.9+</span>
+        <span class="badge" title="App architecture">SwiftUI · MVVM</span>
+        <a class="badge" href="https://apps.apple.com/app/idYOUR_APP_ID" rel="noopener">Download on the App Store</a>
+      </div>
+    </header>
+
+    <div class="grid" role="region" aria-label="Support content">
+
+      <!-- Quick Start -->
+      <section aria-labelledby="quickstart">
+        <h2 id="quickstart">Quick Start</h2>
+        <ol class="list-tight">
+          <li>Tap <strong>+</strong> to add a habit (max 10).</li>
+          <li>Mark completion by tapping the checkbox.</li>
+          <li>Open <strong>Progress View</strong> to see your 12-month grid.</li>
+          <li>Edit or delete from <strong>Edit Mode</strong> (pencil icon).</li>
+        </ol>
+        <p class="small">Tip: Habit names support up to 30 characters and are saved automatically.</p>
+      </section>
+
+      <!-- Features & How it works -->
+      <section aria-labelledby="features">
+        <h2 id="features">What’s in the app</h2>
+        <ul class="list-tight two-col">
+          <li>Manage up to 10 habits</li>
+          <li>One-tap daily tracking</li>
+          <li>12-month progress grid</li>
+          <li>Color-coded completion levels</li>
+          <li>Local data persistence (UserDefaults)</li>
+          <li>Date-based tracking accuracy</li>
+          <li>SwiftUI + MVVM architecture</li>
+        </ul>
+        <div class="callout" role="note" aria-label="Data note">
+          <strong>Data stays on your device.</strong> HabitTracker stores habits and history locally in UserDefaults.
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section aria-labelledby="faq">
+        <h2 id="faq">FAQ</h2>
+
+        <details>
+          <summary>How do I add or rename a habit?</summary>
+          <div>
+            <p>Tap <strong>+</strong> to add. To rename, enter <strong>Edit Mode</strong> (pencil icon), select the habit, change the name, and save.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How does the progress grid work?</summary>
+          <div>
+            <p>The grid shows the last 12 months. Each cell reflects how many habits you completed that day:</p>
+            <ul>
+              <li>Gray — no habits completed</li>
+              <li>Light green — 1–2 habits completed</li>
+              <li>Medium green — 3–4 habits completed</li>
+              <li>Dark green — 5+ habits completed</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Can I back up or migrate my data?</summary>
+          <div>
+            <p>Data is stored in <code>UserDefaults</code>. iCloud device backups may include this data. If you reinstall on the same device and restore from iCloud backup, your data can return. The app does not currently export/import data.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Does the app track or share my data?</summary>
+          <div>
+            <p>No. The app keeps data on your device and does not transmit it. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>I reached the 10-habit limit. Can I add more?</summary>
+          <div>
+            <p>Not in this version. The cap helps keep tracking focused and the UI simple.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I report a bug or request a feature?</summary>
+          <div>
+            <p>Email <a href="mailto:support@yourdomain.com">support@yourdomain.com</a> with steps to reproduce, your iOS version, and screenshots if possible.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- Troubleshooting -->
+      <section aria-labelledby="troubleshooting">
+        <h2 id="troubleshooting">Troubleshooting</h2>
+        <ul class="list-tight">
+          <li><strong>Progress not saving?</strong> Ensure you’re not in Low Data Mode/Storage critically low; then force-quit and reopen the app.</li>
+          <li><strong>Widgets not updating?</strong> Open the app once to refresh data; verify Background App Refresh is enabled.</li>
+          <li><strong>After reinstall, data missing?</strong> Restoring from an iCloud device backup may recover <code>UserDefaults</code> data. If not, there is no server backup.</li>
+          <li><strong>App crashes on launch?</strong> Reboot the device. If it persists, contact support with crash details and your iOS version.</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p>We usually reply within 2–3 business days.</p>
+        <ul class="list-tight">
+          <li>Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></li>
+          <li>Support URL: <a href="https://YOUR-DOMAIN/support.html" rel="noopener">https://YOUR-DOMAIN/support.html</a></li>
+        </ul>
+        <p class="small">When writing, include: app version (see below), iOS version, device model, and steps to reproduce.</p>
+      </section>
+
+      <!-- App Info -->
+      <section aria-labelledby="appinfo">
+        <h2 id="appinfo">App Info</h2>
+        <div class="kvt">
+          <div>App Name</div><div><strong>HabitTracker</strong></div>
+          <div>Platform</div><div>iOS 18.4+</div>
+          <div>Technologies</div><div>SwiftUI · MVVM · UserDefaults</div>
+          <div>Data Storage</div><div>Local (on device)</div>
+          <div>Download</div><div><a href="https://apps.apple.com/app/idYOUR_APP_ID" class="cta">Get on the App Store</a></div>
+        </div>
+        <p class="small" style="margin-top:10px">Created by Halyna Mazur (April 2025).</p>
+      </section>
+
+      <!-- Privacy & Legal -->
+      <section aria-labelledby="privacy">
+        <h2 id="privacy">Privacy & Legal</h2>
+        <ul class="list-tight">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li>License: MIT (see project repository)</li>
+        </ul>
+      </section>
+
+      <!-- Changelog -->
+      <section aria-labelledby="changelog">
+        <h2 id="changelog">Changelog (Public)</h2>
+        <ul class="list-tight">
+          <li><strong>1.0</strong> — Initial release: habit list, daily tracking, 12-month progress grid, local storage.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <footer>
+      <div class="kvt">
+        <div>Support page</div><div>Last updated: 01 Oct 2025</div>
+        <div>Version</div><div>1.0</div>
+        <div>Email</div><div><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></div>
+      </div>
+      <p class="small" style="margin-top:10px">
+        © 2025 Halyna Mazur. All rights reserved. HabitTracker and the HabitTracker logo are trademarks of their respective owners.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
